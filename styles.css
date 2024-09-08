@@ -1,39 +1,43 @@
-* {
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #00FF00; /* Green text */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #002B00; /* Darker green */
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00FF00; /* Green text */
     text-decoration: none;
 }
 
@@ -43,138 +47,20 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+}
+
+main h2 {
+    border-bottom: 1px solid #00FF00; /* Green underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 footer {
+    background-color: #002B00; /* Darker green */
+    color: #00FF00; /* Green text */
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: absolute;
-    width: 100%;
+    position: fixed;
     bottom: 0;
-}
-
-section {
-    margin-bottom: 20px;
-}
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
-body {
-    font-family: 'Press Start 2P', cursive; /* Pixelated font for retro terminal effect */
-    background-color: #0d0d0d; /* Dark background for terminal theme */
-    color: #00FF41; /* Neon green text, classic terminal color */
-    line-height: 1.6;
-    padding: 10px;
-}
-
-/* Header */
-header {
-    background: linear-gradient(90deg, #ff0099, #493240);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 10px #ff0099;
-}
-
-header h1 {
-    font-size: 2em;
-    letter-spacing: 5px;
-    animation: flicker 3s infinite alternate; /* Flickering effect */
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    text-align: center;
-    margin-top: 15px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ff0099; /* Neon pink links */
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #00FFFF; /* Glows when hovered */
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 900px;
-    border: 2px solid #00FF41; /* Neon green borders */
-    box-shadow: 0 0 20px #00FF41;
-    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency for cyber effect */
-}
-
-/* Section titles */
-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #ff0099;
-    border-bottom: 1px solid #00FF41;
-    padding-bottom: 5px;
-}
-
-/* Section content */
-section p, section ul {
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ff0099;
-    color: #0d0d0d;
-    font-size: 0.9em;
-    box-shadow: 0 0 10px #ff0099;
-}
-
-/* Custom Animations */
-@keyframes flicker {
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        opacity: 1;
-    }
-    20%, 24%, 55% {
-        opacity: 0.5;
-    }
-}
-
-/* Links */
-a {
-    color: #00FFFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-shadow: 0 0 10px #00FFFF; /* Glowing effect */
-}
-
-/* Custom terminal look */
-code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #0d0d0d;
-    padding: 5px;
-    border: 1px solid #00FF41;
-    color: #00FFFF;
-    display: block;
-    margin-bottom: 10px;
+    width: 100%;
 }
